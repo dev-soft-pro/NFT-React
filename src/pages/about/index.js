@@ -8,7 +8,7 @@ export default function About(props) {
     <DefaultPage>
       <div className="page-home">
         <p className="text-magento-border" style={{ marginTop: '2vh' }}>About Us</p>
-        <p className="text-normal-black" style={{ marginTop: 30, maxWidth: 579 }}>
+        <p className="text-normal-black para-about">
           After decades of down time and solitude the crypto hermits are ready to make some noise. 
           We are our generations overlooked modern day rebels. 
           Join the revolution of bookworms, self sufficient homesteaders, homeschoolers, 

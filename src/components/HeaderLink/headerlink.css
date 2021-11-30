@@ -28,3 +28,8 @@
   background: #F2653C;
   bottom: 0;
 }
+@media screen and (max-width: 480px) {
+  .header-link-ul {
+    display: none;
+  }
+}

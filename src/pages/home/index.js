@@ -9,7 +9,7 @@ export default function Home(props) {
       <div className="page-home">
         <p className="text-magento-noborder">Crypto</p>
         <p className="text-cyan">Hermits</p>
-        <p className="text-normal-black" style={{ marginTop: 30, maxWidth: 437 }}>
+        <p className="text-normal-black para-home">
           Join the revolution of bookworms, self sufficient homesteaders, homeschoolers, 
           fighters of free speech and leaders of ethical sustainable living.
         </p>

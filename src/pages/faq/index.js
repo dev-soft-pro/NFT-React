@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusSquare, faMinusSquare } from '@fortawesome/free-regular-svg-icons'
@@ -22,9 +23,9 @@ export default function Faq(props) {
           </div>
           {qShow1 && (
             <p className="faq-text-answer">
-              1. You need to download MetaMask. <br />
-              2. Buy Ethereum from an exchange. <br />
-              3. Transfer it to your MetaMask Wallet. <br />
+              1. You need to <a href='https://metamask.io/download' target='_blank'>download MetaMask.</a> <br />
+              2. <a href='https://www.coinbase.com/buy-ethereum' target='_blank'>Buy Ethereum</a> from an exchange. <br />
+              3. <a href='https://www.coinbase.com/learn/tips-and-tutorials/how-to-send-crypto' target='_blank'>Transfer</a> it to your MetaMask Wallet. <br />
             </p>
           )}
           <div className="faq-text-question" onClick={() => setQShow2(prev => !prev)}>
@@ -33,7 +34,7 @@ export default function Faq(props) {
           </div>
           {qShow2 && (
             <p className="faq-text-answer">
-              Once you have MetaMask installed and Ethereum in your wallet you can click here to mint an NFT.
+              Once you have MetaMask installed and Ethereum in your wallet you can <Link to='/mint'>click here</Link> to mint an NFT.
             </p>
           )}
           <div className="faq-text-question" onClick={() => setQShow3(prev => !prev)}>

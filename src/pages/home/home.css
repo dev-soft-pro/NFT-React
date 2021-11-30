@@ -10,7 +10,21 @@
   border-radius: 10px;
   border-style: none;
   padding: 13px 52px;
+  font-family: 'GenuineSansSerif', sans-serif !important;
 }
 .btn-black:hover {
   box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 80%);
+}
+.para-home {
+  margin-top: 30px;
+  max-width: 437px;
+}
+
+@media screen and (max-width: 480px) {
+  .para-home {
+    max-width: 337px;
+  }
+  .btn-black {
+    padding: 8px 30px;
+  }
 }

@@ -45,8 +45,9 @@
   position: absolute;
   top: 5px;
   left: 3vw;
-  z-index: 1;
+  z-index: 3;
   height: 12vh;
+  cursor: pointer;
 }
 
 .header-footer-wrapper {
@@ -66,4 +67,23 @@
 }
 .child-wrapper {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .default-background-wrapper {
+    background-image: url('../../assets/mobile-bg.png');
+		background-size: 100vw 100vh;
+  }
+  .header-gradient,
+  .footer-gradient,
+  .center-image {
+    display: none;
+  }
+  .default-background-wrapper {
+    text-align: center;
+  }
+  .top-left-logo {
+    position: relative;
+    left: 0;
+  }
 }

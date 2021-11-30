@@ -1,3 +1,9 @@
+.page-rarity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+}
 .rarity-wrapper {
   margin-top: 20px;
   display: flex;
@@ -12,4 +18,15 @@
 }
 .rarity-image {
   margin-bottom: 13px;
+}
+@media screen and (max-width: 480px) {
+  .page-rarity {
+    margin-left: 26px;
+    margin-right: 28px;
+  }
+  .rarity-image {
+    margin-bottom: 6px;
+    width: 120px;
+    height: 120px;
+  }
 }

@@ -238,7 +238,7 @@ export default function Connect(props) {
 
   return (
     <DefaultPage>
-      <div className="page-home">
+      <div className="page-mint">
         <p className="text-magento-border" style={{ marginTop: '2vh' }}>Mint Nft</p>
         <p className="text-normal-black" style={{ marginTop: 30 }}>
           Tokens Minted {tokensMinted}/{totalTokens}
@@ -257,11 +257,11 @@ export default function Connect(props) {
           </select>
           <FontAwesomeIcon icon={faChevronDown} className="mint-icon-down" onClick={() => document.getElementById('mintAmount').click()} />
         </div>
-        <div style={{ marginTop: 37 }}>
-          <button id='walletButton' className="btn-cyan" style={{ marginRight: 28, textTransform: 'uppercase' }} onClick={connectWalletPressed}>
+        <div className="mint-button-wrapper">
+          <button id='walletButton' className="btn-cyan mint-connect" onClick={connectWalletPressed}>
             {walletAddress.length > 0 ? 'Connected: ' + String(walletAddress).substring(0, 6) + '...' + String(walletAddress).substring(38) : 
               'Connect Wallet'}
-          </button>
+          </button> <br id="button-separator"/>
           <button id='mintButton' className="btn-magento" onClick={onMintPressed}>MINT NFT</button>
         </div>
         <p id='transactionStatus'>

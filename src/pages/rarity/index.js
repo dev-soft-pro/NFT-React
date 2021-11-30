@@ -16,7 +16,7 @@ export default function Connect(props) {
   ]
   return (
     <DefaultPage>
-      <div className="page-home">
+      <div className="page-rarity">
         <p className="text-magento-border" style={{ marginTop: '2vh' }}>Rarity</p>
         <p className="text-normal-black" style={{ marginTop: 20, maxWidth: 970 }}>
           Each Bookworm NFT has a rarity ranging from common to mythic. 

@@ -8,7 +8,7 @@ class Footer extends Component {
 	render() {
 		return (
 			<div id='Footer'>
-				<p className="footer-text">Copyright 2021. All rights reserved. <span>cryptohermitsnft.com</span></p>
+				<p className="footer-text">Copyright 2021. All rights reserved. <span style={{ textDecoration: 'underline' }}>cryptohermitsnft.com</span></p>
 				<br></br>
 				<p>
 					<FontAwesomeIcon icon={faTwitter} style={{ marginRight: 16 }} />
