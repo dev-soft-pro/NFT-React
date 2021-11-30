@@ -62,5 +62,8 @@
   left: 0;
   z-index: 2;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+}
+.child-wrapper {
+  margin-bottom: 30px;
 }

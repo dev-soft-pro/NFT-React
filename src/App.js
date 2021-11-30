@@ -10,6 +10,8 @@ import Team from './pages/team';
 import Connect from './pages/connect';
 import Mint from './pages/mint';
 import Rarity from './pages/rarity';
+import Faq from './pages/faq';
+import RoadMap from './pages/roadmap';
 // import Minter from './components/Minter/Minter';
 
 class App extends Component {
@@ -25,6 +27,8 @@ class App extends Component {
 						<Route path='/connect' element={<Connect />} />
 						<Route path='/mint' element={<Mint />} />
 						<Route path='/rarity' element={<Rarity />} />
+						<Route path='/faq' element={<Faq />} />
+						<Route path='/roadmap' element={<RoadMap />} />
 					</Routes>
 					{/* <Footer /> */}
 				</div>

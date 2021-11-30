@@ -1,0 +1,19 @@
+.roadmap-step {
+  width: 646px;
+  margin-left: 175px;
+  margin-top: 28px;
+}
+.roadmap-percent {
+  font-size: 36px;
+  line-height: 43.2px;
+  color: #2E8C8E;
+  text-shadow:
+    -2px -2px 0 #fff,
+     0   -2px 0 #fff,
+     2px -2px 0 #fff,
+     2px  0   0 #fff,
+     2px  2px 0 #fff,
+     0    2px 0 #fff,
+    -2px  2px 0 #fff,
+    -2px  0   0 #fff;
+}
