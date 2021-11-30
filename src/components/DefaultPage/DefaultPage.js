@@ -14,9 +14,9 @@ export default function DefaultPage(props) {
         <div className="header-gradient" />
         <div className='center-image' alt='CryptoHermits Logo' />
         <div className="footer-gradient" />
-        <img src={logo} className="top-left-logo" alt="logo" onClick={() => navigate('/')} />
       </div>
       <div className="content-wrapper">
+        <img src={logo} className="top-left-logo" alt="logo" onClick={() => navigate('/')} />
         <HeaderLink />
         <MobileMenu />
         <div className="child-wrapper">

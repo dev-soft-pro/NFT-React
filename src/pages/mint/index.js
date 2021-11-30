@@ -264,7 +264,10 @@ export default function Connect(props) {
           </button> <br id="button-separator"/>
           <button id='mintButton' className="btn-magento" onClick={onMintPressed}>MINT NFT</button>
         </div>
-        <p id='transactionStatus'>
+        <p id='status'>{status}</p>
+				<br></br>
+				<br></br>
+				<p id='transactionStatus'>
 					{transactionStatus}
 					<br></br>
 					<a href={`${transactionURL}`} target='_blank' rel='noreferrer'>

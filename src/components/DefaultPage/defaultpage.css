@@ -85,5 +85,9 @@
   .top-left-logo {
     position: relative;
     left: 0;
+    width: 120px;
+  }
+  .content-wrapper {
+    align-items: center;
   }
 }

@@ -4,8 +4,9 @@
 	text-align: center;
 	margin-top: auto;
 	bottom: 0;
-	/* position: absolute; */
+	position: relative;
 	text-transform: uppercase;
+	z-index: 4;
 }
 
 .footer-text {
