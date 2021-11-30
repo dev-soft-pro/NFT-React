@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/Navbar/Navbar';
 import ScrollToTop from './util/ScrollToTop';
 // import Home from './components/Home/Home';
-import Home from './pages/home/Home';
-import Minter from './components/Minter/Minter';
-import Footer from './components/Footer/Footer';
+import Home from './pages/home';
+import About from './pages/about';
+import Team from './pages/team';
+import Connect from './pages/connect';
+import Mint from './pages/mint';
+import Rarity from './pages/rarity';
+// import Minter from './components/Minter/Minter';
 
 class App extends Component {
 	render() {
 		return (
-			<HashRouter>
+			<BrowserRouter>
 				<div className='App'>
 					<ScrollToTop />
 					<Routes>
 						<Route path='/' element={<Home />} />
-						<Route path='/mint' element={<Minter />} />
+						<Route path='/about' element={<About />} />
+						<Route path='/team' element={<Team />} />
+						<Route path='/connect' element={<Connect />} />
+						<Route path='/mint' element={<Mint />} />
+						<Route path='/rarity' element={<Rarity />} />
 					</Routes>
 					{/* <Footer /> */}
 				</div>
-			</HashRouter>
+			</BrowserRouter>
 		);
 	}
 }

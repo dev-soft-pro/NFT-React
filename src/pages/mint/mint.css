@@ -1,0 +1,40 @@
+.mint-amount {
+  padding: 13px 23px;
+  background: white;
+  border-radius: 10px;
+  width: 350px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 30px;
+}
+.mint-amount:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.btn-cyan {
+  background: #2E8C8E;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 13px 27px;
+}
+.btn-magento {
+  background: #F2653C;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 13px 27px;
+}
+.btn-cyan:hover {
+  box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 80%);
+}
+.btn-magento:hover {
+  box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 80%);
+}

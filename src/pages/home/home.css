@@ -1,0 +1,16 @@
+.page-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+}
+.btn-black {
+  background: black;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 13px 52px;
+}
+.btn-black:hover {
+  box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 80%);
+}

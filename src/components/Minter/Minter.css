@@ -1,7 +1,7 @@
-button {
+/* button {
 	padding: 9px 16px;
 	max-height: 40px;
-	/*box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 20%);*/
+	box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 20%);
 	border-color: #f2653c;
 	color: #f2653c;
 	background-color: white;
@@ -16,7 +16,7 @@ button {
 
 button:hover {
 	margin-top: -1px;
-}
+} */
 
 #walletButton {
 	float: center;

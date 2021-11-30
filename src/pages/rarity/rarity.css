@@ -1,0 +1,15 @@
+.rarity-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  max-width: 60vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.rarity-item {
+  padding: 11px;
+  text-align: center;
+}
+.rarity-image {
+  margin-bottom: 13px;
+}

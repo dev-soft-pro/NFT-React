@@ -1,9 +1,18 @@
 #Footer {
+	width: 100vw;
 	padding: 0 20vw;
 	text-align: center;
 	margin-top: auto;
 	bottom: 0;
-	position: absolute;
+	/* position: absolute; */
+	text-transform: uppercase;
+}
+
+.footer-text {
+	font-size: 16px;
+	line-height: 19.2px;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .footer-line {
