@@ -3,20 +3,10 @@
   background: white;
   border-radius: 10px;
   width: 350px;
-  height: 45px;
+  /* height: 45px; */
   font-size: 16px;
   line-height: 19px;
-  margin-top: 30px;
-}
-.mint-amount:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  appearance: none;
 }
 .btn-cyan {
   background: #2E8C8E;
@@ -37,4 +27,14 @@
 }
 .btn-magento:hover {
   box-shadow: 4px 4px 15px 0 rgb(0 0 0 / 80%);
+}
+.mint-select-wrapper {
+  position: relative;
+  margin-top: 30px;
+}
+.mint-icon-down {
+  font-size: 16px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
 }
