@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom';
 import './defaultpage.css'
 import logo from '../../assets/Crypto-Hermits-Logo-2-Small.png';
@@ -8,6 +8,9 @@ import MobileMenu from '../MobileMenu';
 
 export default function DefaultPage(props) {
   const navigate = useNavigate();
+  useEffect(() => {
+    console.log('Default Page open menu')
+  }, [props.openMenu])
   return (
     <div className="default-layout">
       <div className="default-background-wrapper">
@@ -18,7 +21,7 @@ export default function DefaultPage(props) {
       <div className="content-wrapper">
         <img src={logo} className="top-left-logo" alt="logo" onClick={() => navigate('/')} />
         <HeaderLink />
-        <MobileMenu />
+        <MobileMenu openStatus={props.openMenu} />
         <div className="child-wrapper">
           {props.children}
         </div>

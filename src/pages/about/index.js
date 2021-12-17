@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import DefaultPage from '../../components/DefaultPage/DefaultPage'
 
 import './about.css'
 
 export default function About(props) {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
-    <DefaultPage>
+    <DefaultPage openMenu={openMenu}>
       <div className="page-home">
-        <p className="text-magento-border" style={{ marginTop: '2vh' }}>About Us</p>
+        <p className="text-magento-border" style={{ marginTop: '2vh' }} onClick={() => setOpenMenu(prev => !prev)}>About Us</p>
         <p className="text-normal-black para-about">
           After decades of down time and solitude the crypto hermits are ready to make some noise. 
           We are our generations overlooked modern day rebels. 

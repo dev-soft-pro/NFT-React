@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -16,11 +16,15 @@ const navItems = [
   {title: 'Connect', link: '/connect'}
 ]
 
-export default function MobileMenu() {
+export default function MobileMenu(props) {
   const navigate = useNavigate();
   const location = useLocation();
   const activeMenu = location.pathname
   const [openMenu, setOpenMenu] = useState(false)
+  useEffect(() => {
+    console.log(props.openStatus)
+    setOpenMenu(props.openStatus)
+  }, [props.openStatus])
   return (
     <div className="mobile-menu">
       <FontAwesomeIcon icon={faBars} className="mobile-menu-opener" color="#FFF" onClick={() => setOpenMenu(true)} />
